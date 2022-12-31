@@ -1,7 +1,7 @@
 const PORT = process.env.PORT || 5000;
 const io = require("socket.io")(PORT, {
     cors: {
-        origin: "https://chat-app-sonmung.netlify.app/"
+        origin: "http://chatapp-env.eba-kpihd2kd.ap-northeast-1.elasticbeanstalk.com/"
     }
 });
 io.on('connection', socket => {
